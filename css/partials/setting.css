@@ -1,0 +1,46 @@
+:root{
+    --borderRadiusSmall: 7px;
+    --borderRadiusMedium: 15px;
+    --borderRadiusCircle: 100%;
+    --font-family: Yekan;
+    --font-number:Bnazanin;
+    
+}
+
+@font-face {
+    font-family:Yekan ;
+    src: url(../../fonts/p/IRANYekanWeb.eot);
+    src: url(../../fonts/p/IRANYekanWeb.ttf);
+    src: url(../../fonts/p/IRANYekanWeb.woff);
+    src: url(../../fonts/p/IRANYekanWeb.woff2);
+}
+@font-face {
+    font-family: Bnazanin;
+    src: url(../../fonts/p/B-NAZANIN.TTF);
+}
+.swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      width: 35px !important;
+      height: 35px !important;
+      font-weight: bolder !important;
+      /* position: fixed; */
+      background-color: whitesmoke;
+      border: 0.75px solid lightgrey;
+      border-radius: var(--borderRadiusCircle);
+    }
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 12px !important;
+    color: #2b2b2b;
+    transition: 300ms;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+    opacity: 0 !important;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    
+}
+html{
+    scroll-behavior: smooth;
+}

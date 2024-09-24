@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+.amazing {
+  height: 295px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  .amazing__center {
+    width: 87%;
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0324e;
+    padding-left: 20px;
+    border-radius: var(--borderRadiusMedium);
+    .swiper {
+      width: 100%;
+      height: 87%;
+    }
+    #slide2 {
+      border-radius: 0px 10px 10px 0px;
+    }
+    #slideend {
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      width: 160px !important;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .amazing__logo {
+        width: 100%;
+        height: 100%;
+        background-color: #e0324e;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        a {
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          display: flex;
+          background-color: #e0324e;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-items: center;
+        }
+        img {
+          width: 88px;
+          height: 88px;
+          display: flex;
+        }
+        .countdown {
+          width: fit-content;
+          height: 30px;
+          background-color: #e0324e;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          column-gap: 0.7px;
+          span {
+            font-family: Bnazanin;
+            font-size: 22px;
+          }
+          .space {
+            color: #ffff;
+            font-size: 30px;
+            display: flex;
+            margin-right: 2px;
+            margin-top: -2px;
+          }
+          .digit {
+            background-color: white;
+            color: #2b2b2b;
+            border-radius: 5px;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+          }
+        }
+        p {
+          color: #ffff;
+          font-family: var(--font-family);
+          font-size: 11px;
+          font-weight: bold;
+          display: flex;
+          flex-flow: row;
+          align-items: center;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      .swiper__slide__item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        a {
+          width: inherit;
+          height: inherit;
+          display: flex;
+          flex-flow: column wrap;
+          text-decoration: none;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 132px;
+            height: 132px;
+            display: flex;
+          }
+          p {
+            /* display: flex; */
+            width: 90%;
+            /* height: 40px; */
+            font-family: var(--font-family);
+            font-size: 12px;
+            color: #5b5b5b;
+            display: -webkit-box !important;
+            text-align: right;
+            -webkit-box-orient: vertical;
+            line-clamp: 2;
+            -webkit-line-clamp: 2;
+            overflow: hidden !important;
+          }
+          .price{
+            width: 100%;
+            height:24px ;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 10px;
+            position: relative;
+            margin-right: 10px;
+            .off{
+              display: flex;
+              font-family: var(--font-number);
+              font-size: 15px;
+              text-align: center;
+              flex-flow: row;
+              justify-content: center;
+              font-weight: 600;
+              color: #fff;
+              background-color: #e0324e;
+              width: 20%;
+              height: 20px;
+              border-radius: 20px;
+            }
+            .offprice{
+              width: 80%;
+              height: 20px;
+              display: flex;
+              flex-flow: row wrap;
+
+              span{
+                font-family: var(--font-number);
+                width: 80px;
+                direction: ltr;
+                font-size: 15px;
+                font-weight: 600;
+                position: relative;
+                left: 0px;
+                color: #2b2b2b;
+                display: flex;
+                text-align: left;
+                height: 20px;
+              }
+              img{
+                width: 20px !important;
+                height: 20px !important;
+                display: flex;
+                position: relative;
+                left: 0px;
+              }
+            }
+          }
+          .bprice{
+            font-family: var(--font-number);
+            width: 100%;
+            direction: ltr;
+            text-align: left;
+            font-size: 14px;
+            text-align: left;
+            color: #7c7c7c;
+            text-decoration: line-through;
+            position: relative;
+            left: 43px;
+            
+          }
+        }
+        .amazing_more{
+          display: flex;
+          flex-flow: column wrap;
+          justify-content:start;
+          align-items: center;
+          margin-top: 7px;
+          width: 100px;
+          height: 100px;
+          a{
+            text-decoration: none;
+            display: flex;
+            height: fit-content;
+            width: fit-content;
+          }
+          .amazing_more_icon{
+            width: 51px;
+            height: 51px;
+            border-radius: var(--borderRadiusCircle);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:  2px solid #19bfd3;
+            
+            img{
+              width: 50px;
+              height: 50px;
+              display: flex;
+            }
+          }
+          .amazing_more_text{
+            font-family: var(--font-family);
+            font-size: 14px;
+            color: #575878;
+            display: flex;
+            text-align: center;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
